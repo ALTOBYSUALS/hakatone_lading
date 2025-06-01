@@ -157,7 +157,7 @@
   100% { background-position: 0% 50%; }
 }
 
-/* SECCIÓN HERO AJUSTADA */
+/* SECCIÓN HERO - SOBRESCRIBIR WEBFLOW COMPLETAMENTE */
 .hero-section {
   background-color: var(--color-dark) !important;
   position: relative;
@@ -167,6 +167,8 @@
   display: flex;
   align-items: center;
   margin-top: 0 !important;
+  padding-top: 60px !important;
+  padding-bottom: 40px !important;
 }
 
 /* Fondo animado mejorado */
@@ -204,36 +206,58 @@
   }
 }
 
-.hero-content-wrap {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+/* HERO CONTENT - SOBRESCRIBIR WEBFLOW COMPLETAMENTE */
+.hero-section .hero-content-wrap {
+  position: relative !important;
+  z-index: 2 !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  min-height: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  mix-blend-mode: normal !important;
+  background-clip: border-box !important;
+  -webkit-text-fill-color: inherit !important;
+  opacity: 1 !important;
+  overflow: visible !important;
 }
 
-.hero-text-wrap {
-  width: 55%;
-  padding-right: 40px;
+.hero-section .hero-text-wrap {
+  width: 55% !important;
+  padding-right: 40px !important;
+  max-width: none !important;
+  margin-right: 0 !important;
+  position: relative !important;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+  box-sizing: border-box !important;
+  cursor: default !important;
+  object-fit: fill !important;
 }
 
-.hero-image-wrap {
-  width: 45%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.hero-section .hero-image-wrap {
+  width: 45% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
-.hero-image {
-  max-width: 100%;
-  height: auto;
+.hero-section .hero-image {
+  max-width: 100% !important;
+  height: auto !important;
   transition: all 0.6s ease;
   filter: drop-shadow(0 20px 40px rgba(255, 107, 107, 0.2));
 }
 
-.hero-heading {
+.hero-section .hero-heading {
   font-size: 4rem !important;
   line-height: 1.1 !important;
   margin-bottom: 24px !important;
@@ -241,18 +265,21 @@
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.hero-paragraph {
+.hero-section .hero-paragraph {
   font-size: 1.3rem !important;
   line-height: 1.6 !important;
   margin-bottom: 40px !important;
   color: rgba(255, 255, 255, 0.9) !important;
-  max-width: 90%;
+  max-width: 90% !important;
 }
 
-.hero-buttons-wrap {
-  display: flex;
-  gap: 20px;
-  align-items: center;
+.hero-section .hero-buttons-wrap {
+  display: flex !important;
+  gap: 20px !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  grid-column-gap: 20px !important;
+  grid-row-gap: 20px !important;
 }
 
 .polkadot-icon {
@@ -287,22 +314,31 @@
     font-size: 13px !important;
   }
   
-  .hero-text-wrap, .hero-image-wrap {
-    width: 100%;
-    padding-right: 0;
+  /* HERO RESPONSIVE TABLET */
+  .hero-section .hero-content-wrap {
+    flex-flow: column !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    padding-top: 60px !important;
   }
   
-  .hero-text-wrap {
-    margin-bottom: 40px;
-    text-align: center;
+  .hero-section .hero-text-wrap, 
+  .hero-section .hero-image-wrap {
+    width: 100% !important;
+    padding-right: 0 !important;
   }
   
-  .hero-heading {
+  .hero-section .hero-text-wrap {
+    margin-bottom: 40px !important;
+    text-align: center !important;
+  }
+  
+  .hero-section .hero-heading {
     font-size: 3rem !important;
   }
   
-  .hero-paragraph {
-    max-width: 100%;
+  .hero-section .hero-paragraph {
+    max-width: 100% !important;
   }
 }
 
@@ -330,30 +366,43 @@
     font-size: 12px !important;
   }
   
+  /* HERO RESPONSIVE MÓVIL */
   .hero-section {
     padding: 40px 0 30px !important;
     min-height: calc(100vh - var(--navbar-height)) !important;
   }
   
-  .hero-heading {
+  .hero-section .hero-content-wrap {
+    min-height: auto !important;
+    padding: 40px 20px 200px !important;
+  }
+  
+  .hero-section .hero-text-wrap {
+    max-width: 100% !important;
+  }
+  
+  .hero-section .hero-heading {
     font-size: 2.5rem !important;
   }
   
-  .hero-paragraph {
+  .hero-section .hero-paragraph {
     font-size: 1.1rem !important;
   }
   
-  .hero-buttons-wrap {
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    width: 100%;
+  .hero-section .hero-buttons-wrap {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 16px !important;
+    width: 100% !important;
+    grid-column-gap: 20px !important;
+    grid-row-gap: 16px !important;
   }
   
-  .primary-button, .outline-button {
-    width: 100%;
-    max-width: 280px;
-    text-align: center;
+  .hero-section .primary-button, 
+  .hero-section .outline-button {
+    width: 100% !important;
+    max-width: 280px !important;
+    text-align: center !important;
     padding: 12px 20px !important; /* BOTONES HERO MÁS CÓMODOS EN MÓVIL */
   }
 } 
