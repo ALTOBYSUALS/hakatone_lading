@@ -1,11 +1,11 @@
-/* Estilos personalizados para SONAR - NAVBAR REDUCIDA */
+/* Estilos personalizados para SONAR - NAVBAR EQUILIBRADA */
 :root {
   --color-primary: #FF6B6B;
   --color-secondary: #6B5BFF;
   --color-dark: #121212;
   --color-light: #FFFFFF;
   --color-gray: #EBEBEB;
-  --navbar-height: 45px !important; /* DRASTICAMENTE REDUCIDO */
+  --navbar-height: 65px !important; /* ALTURA EQUILIBRADA */
 }
 
 /* NAVBAR - SOBRESCRIBIR WEBFLOW COMPLETAMENTE */
@@ -54,7 +54,7 @@
 }
 
 .brand .brand-logo {
-  max-height: 28px !important; /* LOGO MÁS PEQUEÑO */
+  max-height: 36px !important; /* LOGO BIEN PROPORCIONADO */
   width: auto !important;
   transition: transform 0.3s ease;
   padding: 0 !important;
@@ -74,8 +74,8 @@
 }
 
 .nav-link-title {
-  padding: 6px 16px !important; /* BOTÓN MÁS COMPACTO */
-  font-size: 13px !important;
+  padding: 10px 20px !important; /* BOTONES MEJOR PROPORCIONADOS */
+  font-size: 14px !important;
   margin: 0 !important;
 }
 
@@ -88,7 +88,7 @@
 
 .dropdown-toggle.w-dropdown-toggle {
   height: var(--navbar-height) !important;
-  padding: 0 10px !important;
+  padding: 0 15px !important;
   display: flex !important;
   align-items: center !important;
   flex-direction: column !important;
@@ -96,7 +96,7 @@
 }
 
 .nav-dropdown-line {
-  width: 20px !important;
+  width: 22px !important;
   height: 2px !important;
   background-color: white !important;
   margin: 2px 0 !important;
@@ -105,17 +105,17 @@
 /* BOTONES */
 .primary-button {
   background-color: var(--color-primary) !important;
-  border-radius: 6px !important;
+  border-radius: 8px !important;
   transition: all 0.3s ease;
   border: none !important;
-  padding: 6px 16px !important;
+  padding: 10px 20px !important; /* PADDING ADECUADO */
   font-weight: 600;
-  font-size: 13px !important;
+  font-size: 14px !important;
   color: white !important;
 }
 
 .navigation-right .primary-button {
-  padding: 6px 16px !important;
+  padding: 10px 20px !important;
 }
 
 .primary-button:hover {
@@ -128,11 +128,11 @@
   border: 2px solid var(--color-primary) !important;
   color: var(--color-primary) !important;
   background-color: transparent !important;
-  border-radius: 6px !important;
+  border-radius: 8px !important;
   transition: all 0.3s ease;
-  padding: 4px 14px !important;
+  padding: 8px 18px !important; /* PADDING EQUILIBRADO */
   font-weight: 600;
-  font-size: 13px !important;
+  font-size: 14px !important;
 }
 
 .outline-button:hover {
@@ -262,19 +262,29 @@
   vertical-align: middle;
 }
 
-/* RESPONSIVE - NAVBAR MÁS PEQUEÑA AÚN */
+/* RESPONSIVE - NAVBAR EQUILIBRADA */
 @media screen and (max-width: 991px) {
   :root {
-    --navbar-height: 40px !important;
+    --navbar-height: 55px !important; /* REDUCCIÓN MODERADA EN TABLET */
   }
   
   .brand .brand-logo {
-    max-height: 24px !important;
+    max-height: 32px !important;
   }
   
   .nav-link-title {
-    padding: 5px 14px !important;
-    font-size: 12px !important;
+    padding: 8px 16px !important;
+    font-size: 13px !important;
+  }
+  
+  .primary-button {
+    padding: 8px 16px !important;
+    font-size: 13px !important;
+  }
+  
+  .outline-button {
+    padding: 6px 14px !important;
+    font-size: 13px !important;
   }
   
   .hero-text-wrap, .hero-image-wrap {
@@ -298,16 +308,26 @@
 
 @media screen and (max-width: 767px) {
   :root {
-    --navbar-height: 38px !important;
+    --navbar-height: 50px !important; /* MÍNIMO FUNCIONAL EN MÓVIL */
   }
   
   .brand .brand-logo {
-    max-height: 22px !important;
+    max-height: 28px !important;
   }
   
   .nav-link-title {
+    padding: 6px 14px !important;
+    font-size: 12px !important;
+  }
+  
+  .primary-button {
+    padding: 6px 14px !important;
+    font-size: 12px !important;
+  }
+  
+  .outline-button {
     padding: 4px 12px !important;
-    font-size: 11px !important;
+    font-size: 12px !important;
   }
   
   .hero-section {
@@ -334,5 +354,6 @@
     width: 100%;
     max-width: 280px;
     text-align: center;
+    padding: 12px 20px !important; /* BOTONES HERO MÁS CÓMODOS EN MÓVIL */
   }
 } 
