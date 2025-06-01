@@ -1,0 +1,107 @@
+<svg width="500" height="400" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo con ondas sonoras -->
+  <path d="M0 200C80 170 120 230 200 200C280 170 320 230 400 200C480 170 520 230 600 200" stroke="#FF6B6B" stroke-width="2" stroke-dasharray="4 4">
+    <animate attributeName="d" dur="10s" repeatCount="indefinite" values="
+      M0 200C80 170 120 230 200 200C280 170 320 230 400 200C480 170 520 230 600 200;
+      M0 200C80 230 120 170 200 200C280 230 320 170 400 200C480 230 520 170 600 200;
+      M0 200C80 170 120 230 200 200C280 170 320 230 400 200C480 170 520 230 600 200" />
+  </path>
+  
+  <path d="M0 220C80 190 120 250 200 220C280 190 320 250 400 220C480 190 520 250 600 220" stroke="#6B5BFF" stroke-width="2" stroke-dasharray="4 4">
+    <animate attributeName="d" dur="12s" repeatCount="indefinite" values="
+      M0 220C80 190 120 250 200 220C280 190 320 250 400 220C480 190 520 250 600 220;
+      M0 220C80 250 120 190 200 220C280 250 320 190 400 220C480 250 520 190 600 220;
+      M0 220C80 190 120 250 200 220C280 190 320 250 400 220C480 190 520 250 600 220" />
+  </path>
+  
+  <!-- Círculo Central (Disco de Vinilo) -->
+  <circle cx="250" cy="200" r="100" fill="url(#vinylGradient)" />
+  <circle cx="250" cy="200" r="95" fill="#121212" />
+  <circle cx="250" cy="200" r="30" fill="#6B5BFF" />
+  <circle cx="250" cy="200" r="10" fill="#121212" />
+  
+  <!-- Surcos del Vinilo -->
+  <circle cx="250" cy="200" r="90" stroke="#333" stroke-width="0.5" fill="none" />
+  <circle cx="250" cy="200" r="85" stroke="#333" stroke-width="0.5" fill="none" />
+  <circle cx="250" cy="200" r="80" stroke="#333" stroke-width="0.5" fill="none" />
+  <circle cx="250" cy="200" r="75" stroke="#333" stroke-width="0.5" fill="none" />
+  <circle cx="250" cy="200" r="70" stroke="#333" stroke-width="0.5" fill="none" />
+  <circle cx="250" cy="200" r="65" stroke="#333" stroke-width="0.5" fill="none" />
+  <circle cx="250" cy="200" r="60" stroke="#333" stroke-width="0.5" fill="none" />
+  <circle cx="250" cy="200" r="55" stroke="#333" stroke-width="0.5" fill="none" />
+  <circle cx="250" cy="200" r="50" stroke="#333" stroke-width="0.5" fill="none" />
+  <circle cx="250" cy="200" r="45" stroke="#333" stroke-width="0.5" fill="none" />
+  <circle cx="250" cy="200" r="40" stroke="#333" stroke-width="0.5" fill="none" />
+  <circle cx="250" cy="200" r="35" stroke="#333" stroke-width="0.5" fill="none" />
+
+  <!-- Elementos de Blockchain -->
+  <g transform="translate(250, 200)">
+    <g transform="rotate(0)">
+      <rect x="-130" y="-5" width="30" height="10" rx="2" fill="#FF6B6B" />
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="30s" repeatCount="indefinite" />
+    </g>
+    <g transform="rotate(60)">
+      <rect x="-130" y="-5" width="30" height="10" rx="2" fill="#FF6B6B" />
+      <animateTransform attributeName="transform" type="rotate" from="60" to="420" dur="30s" repeatCount="indefinite" />
+    </g>
+    <g transform="rotate(120)">
+      <rect x="-130" y="-5" width="30" height="10" rx="2" fill="#FF6B6B" />
+      <animateTransform attributeName="transform" type="rotate" from="120" to="480" dur="30s" repeatCount="indefinite" />
+    </g>
+    <g transform="rotate(180)">
+      <rect x="-130" y="-5" width="30" height="10" rx="2" fill="#FF6B6B" />
+      <animateTransform attributeName="transform" type="rotate" from="180" to="540" dur="30s" repeatCount="indefinite" />
+    </g>
+    <g transform="rotate(240)">
+      <rect x="-130" y="-5" width="30" height="10" rx="2" fill="#FF6B6B" />
+      <animateTransform attributeName="transform" type="rotate" from="240" to="600" dur="30s" repeatCount="indefinite" />
+    </g>
+    <g transform="rotate(300)">
+      <rect x="-130" y="-5" width="30" height="10" rx="2" fill="#FF6B6B" />
+      <animateTransform attributeName="transform" type="rotate" from="300" to="660" dur="30s" repeatCount="indefinite" />
+    </g>
+  </g>
+  
+  <!-- Notas Musicales -->
+  <g>
+    <path d="M140 100C140 96.686 142.686 94 146 94H154C157.314 94 160 96.686 160 100V120C160 123.314 157.314 126 154 126H146C142.686 126 140 123.314 140 120V100Z" fill="#FF6B6B">
+      <animate attributeName="opacity" values="1;0.7;1" dur="3s" repeatCount="indefinite" />
+    </path>
+    <line x1="158" y1="95" x2="158" y2="150" stroke="#FF6B6B" stroke-width="2" />
+    <ellipse cx="168" cy="150" rx="10" ry="8" fill="#FF6B6B" />
+  </g>
+  
+  <g>
+    <path d="M340 80C340 76.686 342.686 74 346 74H354C357.314 74 360 76.686 360 80V100C360 103.314 357.314 106 354 106H346C342.686 106 340 103.314 340 100V80Z" fill="#6B5BFF">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="4s" repeatCount="indefinite" />
+    </path>
+    <line x1="358" y1="75" x2="358" y2="130" stroke="#6B5BFF" stroke-width="2" />
+    <ellipse cx="368" cy="130" rx="10" ry="8" fill="#6B5BFF" />
+  </g>
+  
+  <!-- Elementos Web3 -->
+  <g transform="translate(400, 300)">
+    <circle cx="0" cy="0" r="15" fill="#E6007A" />
+    <circle cx="0" cy="0" r="5" fill="white" />
+    <circle cx="-8" cy="-8" r="3" fill="white" />
+    <circle cx="8" cy="-8" r="3" fill="white" />
+    <circle cx="-8" cy="8" r="3" fill="white" />
+    <circle cx="8" cy="8" r="3" fill="white" />
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="5s" repeatCount="indefinite" />
+  </g>
+  
+  <g transform="translate(100, 300)">
+    <polygon points="0,0 15,15 0,30 -15,15" fill="#FF6B6B" />
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="4s" repeatCount="indefinite" />
+  </g>
+  
+  <!-- Definiciones de gradientes -->
+  <defs>
+    <linearGradient id="vinylGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B6B" />
+      <stop offset="100%" stop-color="#6B5BFF" />
+      <animate attributeName="x1" values="0%;100%;0%" dur="10s" repeatCount="indefinite" />
+      <animate attributeName="y1" values="0%;100%;0%" dur="10s" repeatCount="indefinite" />
+    </linearGradient>
+  </defs>
+</svg> 
