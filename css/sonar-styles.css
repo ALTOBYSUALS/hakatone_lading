@@ -538,6 +538,18 @@
 .footer {
   background-color: #0a0a0a !important;
   border-top: 1px solid rgba(255, 161, 137, 0.1) !important;
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+
+.footer .brand.w-nav-brand {
+  margin-bottom: 20px !important; /* Espacio debajo del logo */
+}
+
+.footer .brand img {
+  max-height: 36px !important; /* Mismo max-height que el logo de la navbar */
+  width: auto !important; /* Para mantener proporción */
+  max-width: 150px !important; /* Límite por si el auto es muy grande */
 }
 
 .footer-link {
