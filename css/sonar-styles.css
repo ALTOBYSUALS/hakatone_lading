@@ -1,87 +1,154 @@
-/* Estilos personalizados para SONAR */
+/* Estilos personalizados para SONAR - NAVBAR REDUCIDA */
 :root {
   --color-primary: #FF6B6B;
   --color-secondary: #6B5BFF;
   --color-dark: #121212;
   --color-light: #FFFFFF;
   --color-gray: #EBEBEB;
-  --navbar-height: 60px; /* Reducido de ~85px a 60px */
+  --navbar-height: 45px !important; /* DRASTICAMENTE REDUCIDO */
 }
 
-/* Elementos de navegación */
-.navigation {
-  background-color: var(--color-dark);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  min-height: var(--navbar-height);
-  padding: 8px 0; /* Reducido el padding */
+/* NAVBAR - SOBRESCRIBIR WEBFLOW COMPLETAMENTE */
+.navigation.w-nav {
+  background-color: var(--color-dark) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  min-height: var(--navbar-height) !important;
+  max-height: var(--navbar-height) !important;
+  height: var(--navbar-height) !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .navigation .container {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  height: var(--navbar-height) !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.navigation-content-wrap {
+  height: var(--navbar-height) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.navigation-left,
+.navigation-right {
+  height: var(--navbar-height) !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.brand.w-nav-brand {
+  height: var(--navbar-height) !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .brand .brand-logo {
-  max-height: 35px; /* Reducido de 50px a 35px */
-  width: auto;
+  max-height: 28px !important; /* LOGO MÁS PEQUEÑO */
+  width: auto !important;
   transition: transform 0.3s ease;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .brand:hover .brand-logo {
   transform: scale(1.05);
 }
 
-.brand .sonar-gradient-text {
-  font-size: 2.5rem;
-  margin: 0;
-  letter-spacing: 1px;
+.nav-link.w-inline-block {
+  height: var(--navbar-height) !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
-/* Botones y elementos interactivos */
+.nav-link-title {
+  padding: 6px 16px !important; /* BOTÓN MÁS COMPACTO */
+  font-size: 13px !important;
+  margin: 0 !important;
+}
+
+/* DROPDOWN MENU */
+.dropdown.w-dropdown {
+  height: var(--navbar-height) !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.dropdown-toggle.w-dropdown-toggle {
+  height: var(--navbar-height) !important;
+  padding: 0 10px !important;
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+.nav-dropdown-line {
+  width: 20px !important;
+  height: 2px !important;
+  background-color: white !important;
+  margin: 2px 0 !important;
+}
+
+/* BOTONES */
 .primary-button {
-  background-color: var(--color-primary);
-  border-radius: 8px;
+  background-color: var(--color-primary) !important;
+  border-radius: 6px !important;
   transition: all 0.3s ease;
-  border: none;
-  padding: 8px 20px; /* Reducido el padding */
+  border: none !important;
+  padding: 6px 16px !important;
   font-weight: 600;
-  font-size: 14px; /* Ligeramente más pequeño */
+  font-size: 13px !important;
+  color: white !important;
 }
 
 .navigation-right .primary-button {
-  padding: 10px 20px;
+  padding: 6px 16px !important;
 }
 
 .primary-button:hover {
-  background-color: #FF5252;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(255, 107, 107, 0.2);
+  background-color: #FF5252 !important;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3) !important;
 }
 
 .outline-button {
-  border: 2px solid var(--color-primary);
-  color: var(--color-primary);
-  background-color: transparent;
-  border-radius: 8px;
+  border: 2px solid var(--color-primary) !important;
+  color: var(--color-primary) !important;
+  background-color: transparent !important;
+  border-radius: 6px !important;
   transition: all 0.3s ease;
-  padding: 10px 22px;
+  padding: 4px 14px !important;
   font-weight: 600;
+  font-size: 13px !important;
 }
 
 .outline-button:hover {
-  background-color: rgba(255, 107, 107, 0.1);
-  transform: translateY(-2px);
+  background-color: rgba(255, 107, 107, 0.1) !important;
+  transform: translateY(-1px);
 }
 
-/* Efectos de texto y gradientes */
+/* EFECTOS DE TEXTO Y GRADIENTES */
 .sonar-gradient-text {
-  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary)) !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   background-size: 200% auto;
   animation: gradientFlow 3s infinite linear;
-  font-weight: 800;
+  font-weight: 800 !important;
 }
 
 @keyframes gradientFlow {
@@ -90,15 +157,16 @@
   100% { background-position: 0% 50%; }
 }
 
-/* Sección Hero */
+/* SECCIÓN HERO AJUSTADA */
 .hero-section {
-  background-color: var(--color-dark);
+  background-color: var(--color-dark) !important;
   position: relative;
   overflow: hidden;
-  min-height: calc(100vh - var(--navbar-height));
-  padding: 80px 0 40px;
+  min-height: calc(100vh - var(--navbar-height)) !important;
+  padding: 60px 0 40px !important;
   display: flex;
   align-items: center;
+  margin-top: 0 !important;
 }
 
 /* Fondo animado mejorado */
@@ -166,18 +234,18 @@
 }
 
 .hero-heading {
-  font-size: 4rem;
-  line-height: 1.1;
-  margin-bottom: 24px;
-  color: var(--color-light);
+  font-size: 4rem !important;
+  line-height: 1.1 !important;
+  margin-bottom: 24px !important;
+  color: var(--color-light) !important;
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .hero-paragraph {
-  font-size: 1.3rem;
-  line-height: 1.6;
-  margin-bottom: 40px;
-  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.3rem !important;
+  line-height: 1.6 !important;
+  margin-bottom: 40px !important;
+  color: rgba(255, 255, 255, 0.9) !important;
   max-width: 90%;
 }
 
@@ -188,20 +256,25 @@
 }
 
 .polkadot-icon {
-  width: 24px;
-  height: 24px;
-  margin-left: 8px;
+  width: 20px !important;
+  height: 20px !important;
+  margin-left: 6px !important;
   vertical-align: middle;
 }
 
-/* Responsive */
+/* RESPONSIVE - NAVBAR MÁS PEQUEÑA AÚN */
 @media screen and (max-width: 991px) {
   :root {
-    --navbar-height: 55px;
+    --navbar-height: 40px !important;
   }
   
   .brand .brand-logo {
-    max-height: 30px;
+    max-height: 24px !important;
+  }
+  
+  .nav-link-title {
+    padding: 5px 14px !important;
+    font-size: 12px !important;
   }
   
   .hero-text-wrap, .hero-image-wrap {
@@ -215,7 +288,7 @@
   }
   
   .hero-heading {
-    font-size: 3rem;
+    font-size: 3rem !important;
   }
   
   .hero-paragraph {
@@ -225,24 +298,29 @@
 
 @media screen and (max-width: 767px) {
   :root {
-    --navbar-height: 50px;
+    --navbar-height: 38px !important;
   }
   
   .brand .brand-logo {
-    max-height: 28px;
+    max-height: 22px !important;
+  }
+  
+  .nav-link-title {
+    padding: 4px 12px !important;
+    font-size: 11px !important;
   }
   
   .hero-section {
-    padding: 60px 0 40px;
-    min-height: calc(100vh - var(--navbar-height));
+    padding: 40px 0 30px !important;
+    min-height: calc(100vh - var(--navbar-height)) !important;
   }
   
   .hero-heading {
-    font-size: 2.5rem;
+    font-size: 2.5rem !important;
   }
   
   .hero-paragraph {
-    font-size: 1.1rem;
+    font-size: 1.1rem !important;
   }
   
   .hero-buttons-wrap {
