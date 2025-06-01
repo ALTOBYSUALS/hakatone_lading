@@ -131,17 +131,21 @@
 /* DROPDOWN MENU - MOBILE */
 .dropdown.w-dropdown {
   height: var(--navbar-height) !important;
-  display: flex !important;
+  display: none !important; /* OCULTAR COMPLETAMENTE */
   align-items: center !important;
 }
 
 .dropdown-toggle.w-dropdown-toggle {
   height: var(--navbar-height) !important;
   padding: 0 15px !important;
-  display: flex !important;
+  display: none !important; /* OCULTAR COMPLETAMENTE */
   align-items: center !important;
   flex-direction: column !important;
   justify-content: center !important;
+}
+
+.nav-menu.w-nav-menu {
+  display: none !important; /* OCULTAR COMPLETAMENTE */
 }
 
 .nav-dropdown-line {
