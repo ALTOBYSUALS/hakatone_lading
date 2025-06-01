@@ -470,6 +470,27 @@
   box-shadow: 0 12px 35px rgba(255, 161, 137, 0.4) !important;
 }
 
+.cta-image-wrap {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.cta-section-image {
+  max-width: 100% !important;
+  height: auto !important;
+  transition: all 0.6s ease;
+  filter: drop-shadow(0 20px 40px rgba(255, 161, 137, 0.3));
+}
+
+.cta-section-image:hover {
+  transform: scale(1.02);
+  filter: drop-shadow(0 25px 50px rgba(255, 161, 137, 0.4));
+}
+
 /* FOOTER CORAL */
 .footer {
   background-color: #0a0a0a !important;
