@@ -11,18 +11,38 @@
 .navigation {
   background-color: var(--color-dark);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 10px 0;
+  padding: 8px 0;
   height: auto;
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 90%;
 }
 
 .navigation-content-wrap {
   display: flex;
   align-items: center;
   height: auto;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navigation-left, .navigation-right {
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
 }
 
 .brand .brand-logo {
-  max-height: 35px;
+  max-height: 28px;
   width: auto;
   transition: transform 0.3s ease;
 }
@@ -32,20 +52,29 @@
 }
 
 .brand .sonar-gradient-text {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 0;
   letter-spacing: 1px;
+}
+
+.nav-menu {
+  margin-left: 10px;
+}
+
+.w-dropdown-toggle {
+  padding: 0 5px;
 }
 
 /* Botones y elementos interactivos */
 .primary-button {
   background-color: var(--color-primary);
-  border-radius: 8px;
+  border-radius: 6px;
   transition: all 0.3s ease;
   border: none;
-  padding: 8px 20px;
+  padding: 6px 14px;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  white-space: nowrap;
 }
 
 .primary-button:hover {
@@ -58,11 +87,11 @@
   border: 2px solid var(--color-primary);
   color: var(--color-primary);
   background-color: transparent;
-  border-radius: 8px;
+  border-radius: 6px;
   transition: all 0.3s ease;
-  padding: 8px 18px;
+  padding: 6px 12px;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .outline-button:hover {
